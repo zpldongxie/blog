@@ -2,11 +2,11 @@
  * @description: 导航组件
  * @author: zpl
  * @Date: 2019-12-03 17:28:34
- * @LastEditTime: 2019-12-04 09:30:55
+ * @LastEditTime: 2019-12-04 16:52:44
  * @LastEditors: zpl
  */
 import React, { Component } from 'react';
-import { Layout, Menu, Icon } from 'antd'
+import { Layout, Menu, Avatar } from 'antd'
 import { Link } from 'react-router-dom'
 
 import './index.less'
@@ -21,17 +21,17 @@ export default class HeadNav extends Component {
         return (
             <Header id="headNav" style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
                 <div className="nav-logo-wrap">
-                    <Icon type="global" className="nav-logo" />
+                    <Avatar size={40} src="http://img0.imgtn.bdimg.com/it/u=2881388121,25353099&fm=26&gp=0.jpg" />
                 </div>
                 <div className="nav-list-wrap">
                     <Menu
                         mode="horizontal"
                         defaultSelectedKeys={[this.state.current]}
                     >
-                        <Menu.Item key="home"><Link to="/home">首页</Link></Menu.Item>
-                        <Menu.Item key="aboutme"><Link to="/home/about">关于我</Link></Menu.Item>
-                        <Menu.Item key="article"><Link to="/home/article">文章分享</Link></Menu.Item>
-                        <Menu.Item key="resource"><Link to="/home/resource">资源共享</Link></Menu.Item>
+                        <Menu.Item key="home"><Link to="/">教程分享</Link></Menu.Item>
+                        <Menu.Item key="aboutme"><Link to="/learn">学习笔记</Link></Menu.Item>
+                        <Menu.Item key="article"><Link to="/aboutMe">个人简历</Link></Menu.Item>
+                        <Menu.Item key="resource"><Link to="/tools">实用工具</Link></Menu.Item>
                     </Menu>
                 </div>
             </Header>
