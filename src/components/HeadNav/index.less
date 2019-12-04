@@ -1,0 +1,28 @@
+#headNav {
+    height    : 50px;
+    background: #444;
+    color     : #eee;
+    display   : flex;
+
+    .nav-logo-wrap {
+        font-size  : 26px;
+        width      : 26px;
+        line-height: 50px;
+        margin     : 0 auto;
+    }
+
+    .nav-list-wrap {
+        width         : calc(100% - 50px);
+        display       : flex;
+        flex-direction: row-reverse;
+
+        .ant-menu {
+            background: transparent;
+            border    : none;
+
+            .ant-menu-item:not(.ant-menu-item-selected)>a {
+                color: #eee;
+            }
+        }
+    }
+}
