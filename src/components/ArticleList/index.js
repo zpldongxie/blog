@@ -2,11 +2,13 @@
  * @description: 文章列表
  * @author: zpl
  * @Date: 2019-12-04 16:42:36
- * @LastEditTime: 2019-12-04 17:14:25
+ * @LastEditTime: 2019-12-05 10:31:46
  * @LastEditors: zpl
  */
 import React, { Component } from 'react'
-import { List, Avatar, Icon } from 'antd';
+import { List, Icon } from 'antd';
+
+import './index.less'
 
 const IconText = ({ type, text }) => (
   <span>
@@ -17,7 +19,7 @@ const IconText = ({ type, text }) => (
 
 export default class ArticleList extends Component {
   render() {
-    const { listData } = this.props;
+    const { listData, pageSize } = this.props;
     return (
       <List
         itemLayout="vertical"
@@ -26,13 +28,13 @@ export default class ArticleList extends Component {
           onChange: page => {
             console.log(page);
           },
-          pageSize: 3,
+          pageSize: pageSize,
         }}
         dataSource={listData}
         footer={
           <div>
             <b>ant design</b> footer part
-      </div>
+          </div>
         }
         renderItem={item => (
           <List.Item
@@ -44,18 +46,16 @@ export default class ArticleList extends Component {
             ]}
             extra={
               <img
-                width={272}
                 alt="logo"
-                src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
+                src={item.image}
               />
             }
           >
             <List.Item.Meta
-              avatar={<Avatar src={item.avatar} />}
               title={<a href={item.href}>{item.title}</a>}
               description={item.description}
             />
-            {item.content}
+            {/* {item.content} */}
           </List.Item>
         )}
       />
