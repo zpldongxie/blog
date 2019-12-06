@@ -2,7 +2,7 @@
  * @description: 教程分享
  * @author: zpl
  * @Date: 2019-12-04 09:22:48
- * @LastEditTime: 2019-12-05 10:16:51
+ * @LastEditTime: 2019-12-06 10:17:23
  * @LastEditors: zpl
  */
 import React, { Component } from 'react'
@@ -20,7 +20,7 @@ export default class Resource extends Component {
   render() {
     const {listData} = this.state;
     return (
-      <div>
+      <div>        
         <ArticleList listData={listData} pageSize={6} />
       </div>
     )
@@ -32,7 +32,6 @@ export default class Resource extends Component {
       function (res) {
         console.log(res);
         res.json().then(function (data) {
-          console.log(data);
           self.setState({
             listData: data.map(item => {
               return {

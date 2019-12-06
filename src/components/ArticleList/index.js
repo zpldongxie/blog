@@ -2,7 +2,7 @@
  * @description: 文章列表
  * @author: zpl
  * @Date: 2019-12-04 16:42:36
- * @LastEditTime: 2019-12-05 10:31:46
+ * @LastEditTime: 2019-12-06 14:21:31
  * @LastEditors: zpl
  */
 import React, { Component } from 'react'
@@ -30,12 +30,7 @@ export default class ArticleList extends Component {
           },
           pageSize: pageSize,
         }}
-        dataSource={listData}
-        footer={
-          <div>
-            <b>ant design</b> footer part
-          </div>
-        }
+        dataSource={listData}        
         renderItem={item => (
           <List.Item
             key={item.title}
@@ -47,7 +42,7 @@ export default class ArticleList extends Component {
             extra={
               <img
                 alt="logo"
-                src={item.image}
+                src={process.env.PUBLIC_URL + 'testImg.jpg'}
               />
             }
           >
