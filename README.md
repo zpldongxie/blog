@@ -2,30 +2,30 @@
 个人博客
 
 # 项目结构
-|                                        文件                                   |                   说明
-| :---------------------------------------------------------------------------- | :------------------------------------:
-| root                                                                          | 根节点
-| &nbsp;&nbsp;&nbsp;\|-- mock                                                   | 模拟数据
-| &nbsp;&nbsp;&nbsp;\|-- public                                                 | 全局文件
-| &nbsp;&nbsp;&nbsp;\|-- src                                                    | 
-| &nbsp;&nbsp;&nbsp;\|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\|-- assets           | 静态文件文件夹
-| &nbsp;&nbsp;&nbsp;\|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\|-- common           | 公共配置
-| &nbsp;&nbsp;&nbsp;\|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\|-- components       | 通用组件
-| &nbsp;&nbsp;&nbsp;\|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\|-- layouts          | 通用布局
-| &nbsp;&nbsp;&nbsp;\|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\|-- routes           | 路由
-| &nbsp;&nbsp;&nbsp;\|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\|-- services         | 后台接口服务
-| &nbsp;&nbsp;&nbsp;\|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\|-- utils            | 工具库
-| &nbsp;&nbsp;&nbsp;\|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\|-- views            | 页面内容
-| &nbsp;&nbsp;&nbsp;\|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\|-- App.css          | 
-| &nbsp;&nbsp;&nbsp;\|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\|-- App.js           | 主组件
-| &nbsp;&nbsp;&nbsp;\|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\|-- App.test.js      | 
-| &nbsp;&nbsp;&nbsp;\|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\|-- index.css        | 
-| &nbsp;&nbsp;&nbsp;\|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\|-- index.js         | 应用入口
-| &nbsp;&nbsp;&nbsp;\|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\|-- logo.svg         | 
-| &nbsp;&nbsp;&nbsp;\|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\|-- router.js        | 主路由
-| &nbsp;&nbsp;&nbsp;\|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\|-- serviceWorker.js | 
-| &nbsp;&nbsp;&nbsp;\|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\|-- setupProxy.js    | 反向代理插件配置
-| &nbsp;&nbsp;&nbsp;\|-- config-overrides.js                                    | 通过react-app-rewired实现覆盖默认配置
+```
+├── docs                   # 构建后的文件,支持github部署
+├── mock                   # 模拟数据
+├── public                 # 全局静态资源
+├── src
+│    ├── assets            # 静态文件文件夹
+│    ├── common            # 公共配置
+│    ├── components        # 通用组件
+│    ├── layouts           # 通用布局
+│    ├── routes            # 路由
+│    ├── services          # 后台接口服务
+│    ├── utils             # 工具库
+│    ├── views             # 页面内容
+│    ├── App.css
+│    ├── App.js            # 主组件
+│    ├── App.test.js
+│    ├── index.css
+│    ├── index.js          # 应用入口
+│    ├── router.js         # 主路由
+│    ├── serviceWorker.js
+│    └── setupProxy.js     # 反向代理插件配置
+└── config-overrides.js    # 通过react-app-rewired实现覆盖默认配置
+```
+
 
 # 相关技术
 该项目是通过[Create React App](https://github.com/facebook/create-react-app)引导的。
