@@ -5,7 +5,7 @@
  * @LastEditTime: 2019-12-04 16:36:32
  * @LastEditors: zpl
  */
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class AboutMe extends Component {
   render() {
@@ -13,6 +13,6 @@ export default class AboutMe extends Component {
       <div>
         个人简历
       </div>
-    )
+    );
   }
 }
