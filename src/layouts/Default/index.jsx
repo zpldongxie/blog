@@ -42,6 +42,8 @@ const Default = (props) => {
           <Divider type="vertical" />
           <a href="https://ant.design/index-cn" target="_blank" rel="noopener noreferrer">ant.design</a>
           <Divider type="vertical" />
+          <a href="https://docs.nestjs.com" target="_blank" rel="noopener noreferrer">NestJS Documentation</a>
+          <Divider type="vertical" />
           <Link to="/login">manager</Link>
         </div>
         zpl ©2019 Created by Ant Design
